@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "node server for rind mind page",
   "main": "server.js",
+  "homepage": "https://param105.github.io/rindmindserver",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "param105",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "gh-pages": "^2.2.0"
+    "express": "^4.17.1"
   }
 }
